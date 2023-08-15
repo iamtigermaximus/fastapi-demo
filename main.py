@@ -6,30 +6,30 @@ from models import Gender, User, Role, UserUpdateRequest
 app= FastAPI()
 
 db:List[User]=[
-    # User(
-    #     id=UUID("d74ea12f-0f5f-4882-855e-dcf406251241"), 
-    #     first_name="Siegfred", 
-    #     last_name="Gamboa", 
-    #     middle_name="Molina",
-    #     gender=Gender.male, 
-    #     role=[Role.admin]
-    #     ),
-    # User(
-    #     id=UUID("c4abb58c-4dd7-462f-8038-9369e6cd7311"), 
-    #     first_name="Alonzo", 
-    #     last_name="Gamboa", 
-    #     middle_name="Villanueva",
-    #     gender=Gender.male, 
-    #     role=[Role.user]
-    #     ),
-    #  User(
-    #     id=UUID("9f6ae96f-1e59-4365-b294-112b6036986e"), 
-    #     first_name="Saige", 
-    #     last_name="Gamboa", 
-    #     middle_name="Villanueva",
-    #     gender=Gender.female, 
-    #     role=[Role.student]
-    #     )
+    User(
+        id=UUID("d74ea12f-0f5f-4882-855e-dcf406251241"), 
+        first_name="Siegfred", 
+        last_name="Gamboa", 
+        middle_name="Molina",
+        gender=Gender.male, 
+        role=[Role.admin]
+        ),
+    User(
+        id=UUID("c4abb58c-4dd7-462f-8038-9369e6cd7311"), 
+        first_name="Alonzo", 
+        last_name="Gamboa", 
+        middle_name="Villanueva",
+        gender=Gender.male, 
+        role=[Role.user]
+        ),
+     User(
+        id=UUID("9f6ae96f-1e59-4365-b294-112b6036986e"), 
+        first_name="Saige", 
+        last_name="Gamboa", 
+        middle_name="Villanueva",
+        gender=Gender.female, 
+        role=[Role.student]
+        )
 ]
 
 @app.get("/")
